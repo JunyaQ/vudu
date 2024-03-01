@@ -1,0 +1,70 @@
+
+/* Navigation */
+.logo{
+    height: 5vh;
+}
+/* Hero */
+.heroSection{
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    position: relative;
+    width: 100%;
+}
+.heroimg{
+  width: 100%; 
+  height: auto; 
+}
+.hero{
+    max-width: 100%;
+}
+/* Movies Section */
+.movieimg{
+    width: 12vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .movies{
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-bottom: 5vh;
+  }
+
+  /* Tvs Section */
+  .tvimg{
+    width: 12vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tvs{
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-bottom: 5vh;
+  }
+/* Footer */
+.downloadimg{
+    width: 10vw;
+    left: 0; 
+    margin-bottom: 2vh;
+}
+.info{
+    margin-bottom: 2vh;    
+}
+.infolist{
+    list-style: none;
+}
+.fheading{
+    font-weight: bolder;
+    font-size: x-large;
+}
+.infolist li{
+    margin-top: 1vh;
+}
+.media{
+    margin-bottom: 1vh;
+    bottom: 10vh;
+}
+/* login offcanvas */
