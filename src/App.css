@@ -1,4 +1,6 @@
-
+body{
+  min-height: 45vh;
+}
 /* Navigation */
 .logo{
     height: 5vh;
@@ -68,3 +70,25 @@
     bottom: 10vh;
 }
 /* login offcanvas */
+.submitBtn{
+  margin-top: 2vh;
+}
+.loginform{
+  margin-top: 2vh;
+}
+/* tab movie section */
+.tabMovieSection{
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+/* Detail */
+.backgroundImg{
+  width: auto;
+  height: 100vh;
+  opacity: 0.7;
+}
+.detailTitle{
+  font-size: 6vw !important; 
+  font-weight: bold;
+  
+}

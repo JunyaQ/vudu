@@ -8,8 +8,10 @@ function MyvuduPage() {
         <header>
         <Navigation/>
         </header>
-        
-            <h1>Hello from Myvudu page</h1>
+        <body>
+        <h1>Hello from Myvudu page</h1>
+        </body>
+            
 
         <footer>
    

@@ -1,10 +1,13 @@
 import React , { useState } from 'react';
-import { Dropdown, DropdownButton, ButtonGroup, Form } from 'react-bootstrap';
+import { Dropdown, DropdownButton, ButtonGroup, Form,Button } from 'react-bootstrap';
 function FilterBtn(){
    
     const handleCheckboxChange = (event) => {
       console.log(event.target.id);
       };
+      const handleFilter = (event) =>{
+        console.log(event.target.id);
+      }
     return(
         <div>
         <DropdownButton
@@ -156,7 +159,9 @@ function FilterBtn(){
         />
          </Dropdown.Item>
 {/*  */}
+<Button variant="primary" onClick={handleFilter} className="ms-2">Apply</Button>
       </DropdownButton>
+     
         </div>
     )
 }

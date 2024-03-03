@@ -8,6 +8,7 @@ import FreePage from './pages/FreePage';
 import MyvuduPage from './pages/MyvuduPage';
 import RedeemPage from './pages/RedeemPage';
 import SigninPage from './pages/SigninPage';
+import Detail from './components/Detail';
 
 
 function App() {
@@ -17,11 +18,13 @@ function App() {
       <Routes>
       <Route path='/' element={<MainPage/>}></Route>
       <Route path='/movies' element={<MoviePage/>}></Route>
-      <Route path='/tv' element={<TvPage/>}></Route>
+      <Route path='/tvs' element={<TvPage/>}></Route>
       <Route path='/free' element={<FreePage/>}></Route>
       <Route path='/myvudu' element={<MyvuduPage/>}></Route>
       <Route path='/Redeem' element={<RedeemPage/>}></Route>
       <Route path='/Signin' element={<SigninPage/>}></Route>
+      <Route path="/movies/:id" element={<Detail type="movies"/>} ></Route>
+      <Route path="/tvs/:id" element={<Detail type="tvs"/>} ></Route>
       </Routes>
       </BrowserRouter>
     </div>

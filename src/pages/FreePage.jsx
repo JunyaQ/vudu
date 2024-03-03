@@ -8,11 +8,11 @@ function FreePage() {
         <header>
         <Navigation/>
         </header>
-
-            <h1>Hello From Free page</h1>
+        <body>
+        <h1>Hello From Free page</h1>
+        </body>
 
         <footer>
-   
         <Footer/>
         </footer>
         </div>

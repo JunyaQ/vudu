@@ -12,9 +12,12 @@ function Main() {
         <Navigation/>
         </header>
 
+        <body>
         <Hero/>
         <Movies/>
         <Tvs/>
+        </body>
+        
 
         <footer>
         <Footer/>

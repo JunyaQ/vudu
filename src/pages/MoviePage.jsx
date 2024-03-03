@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { Button, Container } from "react-bootstrap";
-import FilterBtn from '../components/FilterBtn';
+import {Container } from "react-bootstrap";
+import TabOptions from '../components/TabOptions';
 
 function MoviePage() {
     const [films, setFilms] = useState([]);
@@ -21,12 +21,7 @@ function MoviePage() {
         </header>
 
         <body>
-            <FilterBtn/>
-        {films.map(film => (
-             <div className="d-flex justify-content-center">
-            <img src={require(`../imgs/movies/${film.img}.jpeg`)} className='movieimg'/> 
-            </div>
-             ))}
+            <TabOptions dbdata={films} type="movies"/>
         </body>
         
         <footer>

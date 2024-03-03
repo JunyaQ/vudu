@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Container,Nav, Navbar,Form, Button} from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import logo from '../imgs/logo.png';
+import Login from './Login';
 
 
 function Navigation(){
- 
+  const [modalShow, setModalShow] = useState(false);
+  
     return(
         <div>
         <Navbar bg="dark" data-bs-theme="dark">
@@ -15,7 +17,7 @@ function Navigation(){
             </Nav>
             <Nav className="me-auto">
               <Nav.Link href='/movies'>Moives</Nav.Link>
-              <Nav.Link href='/tv'>TV</Nav.Link>
+              <Nav.Link href='/tvs'>TV</Nav.Link>
               <Nav.Link href='/free'>Free</Nav.Link>
               <Nav.Link href='/myvudu'>MyVudu</Nav.Link>
               
@@ -23,7 +25,8 @@ function Navigation(){
 
             <Nav className='justify-content-end'>
             <Nav.Link href='/Redeem'>Redeem</Nav.Link>
-            <Nav.Link href="/Signin">Sign In</Nav.Link>
+            {/* model from bootstrap */}
+            <Nav.Link > <Login show={modalShow} onHide={() => setModalShow(false)} onClick={() => Login(true)} /></Nav.Link>
             <Form className="d-flex">
             <Form.Control
               type="search"
@@ -36,7 +39,7 @@ function Navigation(){
             </Nav>
           </Container>
         </Navbar>
-        
+       
       </div>
     );
 }

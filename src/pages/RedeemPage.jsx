@@ -8,11 +8,11 @@ function RedeemPage() {
         <header>
         <Navigation/>
         </header>
-        
-            <h1>Hello from Redeem page</h1>
+        <body>
+        <h1>Hello from Redeem page</h1>
+        </body>
 
         <footer>
-   
         <Footer/>
         </footer>
         </div>
