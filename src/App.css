@@ -1,3 +1,11 @@
+:root{
+  --darkBlue: #2d728f;
+  --munsell: #3B8EA5;
+  --vanilla: #F5EE9E;
+  --orange: #F49E4C;
+  --bric: #AB3428;
+}
+
 body{
   min-height: 45vh;
 }
@@ -28,18 +36,8 @@ body{
 .movieSection{
   margin-bottom: 5vh;
 }
-.movieimg{
-  width: 12vw;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.movies{
-  padding-right: 10vw;
-  padding-left: 10vw;
-  margin-bottom: 5vh;
-}
+
+
 
 
 
@@ -97,26 +95,23 @@ body{
 .detailTitle{
   font-size: 4vw !important; 
   font-weight: bold;
-  margin-left: 2vw;
-  
+  margin-left: 2vw; 
 }
 .container {
   display: flex;
 }
-
 .image-container, .details-container {
   flex: 1;
-  background-color: black;
-  height: 80vh;
-  color: white
 }
-
 img {
   max-width: 100%; 
-  height: auto; 
-  
+  height: auto;  
 }
-
 .details-container {
   padding: 20px; 
+}
+.btn{
+  margin-left: 4vw;
+  background-color: var(--munsell) !important;
+  color: var(--vanilla) !important;
 }

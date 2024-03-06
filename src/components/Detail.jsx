@@ -14,8 +14,8 @@ function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
 
             {/* Synopsis */}
             <p>{description}</p>
-            <button>Rent: {rentPrice}</button>
-            <button>Buy: {buyPrice}</button>
+            <button className="btn">Rent: {rentPrice}</button>
+            <button className="btn">Buy: {buyPrice}</button>
             </div>
 
         </div>

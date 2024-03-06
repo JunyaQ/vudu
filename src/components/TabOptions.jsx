@@ -33,12 +33,12 @@ function TabOptions({dbdata, type}){
     <Tab.Content>
         <Tab.Pane eventKey="default">
           {/* <p>Most watched</p> */}
-          <Row md={6} className='movieSection justify-content-center'>
+          <Row md={6} className='justify-content-center'>
            {dbdata.map(item => (
-             <Col className="d-flex justify-content-center" >
+             <Col className="d-flex justify-content-center movieSection" >
                 {/* use link and id, plus dbname movie1 or tv1 */}
             <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='movieimg'/> 
+            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvimg'/> 
             </Link>
             </Col>
         ))}
@@ -47,11 +47,11 @@ function TabOptions({dbdata, type}){
         {/* sort by date */}
         <Tab.Pane eventKey="release">
         {/* <p>Release Date</p> */}
-        <Row md={6} className='movieSection justify-content-center'>
+        <Row md={6} className='justify-content-center'>
            {yearData.map(item => (
-             <Col className="d-flex justify-content-center">
+             <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='movieimg'/> 
+            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvimg'/> 
             </Link>
             </Col> 
         ))}
@@ -62,9 +62,9 @@ function TabOptions({dbdata, type}){
         {/* <p>Recent Added</p> */}
         <Row md={6} className='movieSection justify-content-center'>
            {alphabetData.map(item => (
-             <Col className="d-flex justify-content-center">
+             <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='movieimg'/> 
+            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvimg'/> 
             </Link>
             </Col> 
         ))}
