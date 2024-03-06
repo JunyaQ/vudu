@@ -1,50 +1,25 @@
-import React,{useState, useEffect} from "react";
-import { useParams } from 'react-router-dom';
-import { Card } from "react-bootstrap";
+import React from "react";
+function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
+    return(
+        <div className="container">
+            <div>
+            <img src={require(`../imgs/movies/${img}.jpeg`)} className='movieimg'/>
+            </div>
+            <div>
+            <h1 className="detailTitle">{title}</h1>
+            {type.map(a=>(
+                <p>{a}  |</p>
+            ))}
+            <p>{year}</p>
 
+            {/* Synopsis */}
+            <p>{description}</p>
+            <button>Rent: {rentPrice}</button>
+            <button>Buy: {buyPrice}</button>
+            </div>
 
-function Detail({type}){
-  const { id } = useParams(); 
-  const [item, setItem] = useState(null);
-  console.log(type);
-  useEffect(() => {
-      let url = `http://localhost:3001/${type}/${id}`;
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if (!id) {
-          if (data.length > 0) {
-            setItem(data[0]);
-          }
-        } else {
-          setItem(data);
-        }
-      })
-      .catch(error => console.error('Error:', error));
-  }, [type, id]); 
+        </div>
+    )
 
-  if (!item) {
-    return <div>Loading...</div>;
-  }
-  return (
-    <Card className="bg-dark text-white">
-      <Card.Img src={require(`../imgs/background/${item.img}.jpeg`)} className='backgroundImg'/> 
-      <Card.ImgOverlay>
-        <div>
-      <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='movieimg'/>
-      </div>
-
-        <Card.Title className="detailTitle">{item.title}</Card.Title>
-        <Card.Text>
-        <div>
-      <p>Year: {item.year}</p>
-    </div>
-        </Card.Text>
-        
-      </Card.ImgOverlay>
-    </Card>
-    
-  );
 }
-
-export default Detail;
+export default DetailIfno;

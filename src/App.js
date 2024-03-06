@@ -1,6 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes ,Route, BrowserRouter } from "react-router-dom";
+import Navigation from './components/Navigation'
+import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import MoviePage from './pages/MoviePage';
 import TvPage from './pages/TvPage';
@@ -8,12 +10,15 @@ import FreePage from './pages/FreePage';
 import MyvuduPage from './pages/MyvuduPage';
 import RedeemPage from './pages/RedeemPage';
 import SigninPage from './pages/SigninPage';
-import Detail from './components/Detail';
+import DetailPage from './pages/DetailPage';
 
 
 function App() {
   return (
     <div className="App">
+      <header>
+      <Navigation/>
+      </header>
     <BrowserRouter>
       <Routes>
       <Route path='/' element={<MainPage/>}></Route>
@@ -23,10 +28,14 @@ function App() {
       <Route path='/myvudu' element={<MyvuduPage/>}></Route>
       <Route path='/Redeem' element={<RedeemPage/>}></Route>
       <Route path='/Signin' element={<SigninPage/>}></Route>
-      <Route path="/movies/:id" element={<Detail type="movies"/>} ></Route>
-      <Route path="/tvs/:id" element={<Detail type="tvs"/>} ></Route>
+      <Route path="/movies/:id" element={<DetailPage type="movies"/>} ></Route>
+      <Route path="/tvs/:id" element={<DetailPage type="tvs"/>} ></Route>
       </Routes>
       </BrowserRouter>
+
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

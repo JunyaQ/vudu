@@ -1,11 +1,11 @@
 body{
   min-height: 45vh;
 }
-/* Navigation */
+ /* -----------------Navigation ----------------*/
 .logo{
     height: 5vh;
 }
-/* Hero */
+ /* -----------------Hero ----------------*/
 .heroSection{
     margin-bottom: 5vh;
     padding-top: 5vh;
@@ -19,19 +19,29 @@ body{
 .hero{
     max-width: 100%;
 }
-/* Movies Section */
-.movieimg{
-    width: 12vw;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ /* -----------------Movie Section ----------------*/
   .movies{
-    padding-right: 10vw;
-    padding-left: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 5vh;
   }
+.movieSection{
+  margin-bottom: 5vh;
+}
+.movieimg{
+  width: 12vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.movies{
+  padding-right: 10vw;
+  padding-left: 10vw;
+  margin-bottom: 5vh;
+}
+
+
 
   /* Tvs Section */
   .tvimg{
@@ -40,6 +50,8 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    color: black;
   }
   .tvs{
     padding-right: 10vw;
@@ -82,13 +94,29 @@ body{
   margin-top: 5vh;
 }
 /* Detail */
-.backgroundImg{
-  width: auto;
-  height: 100vh;
-  opacity: 0.7;
-}
 .detailTitle{
-  font-size: 6vw !important; 
+  font-size: 4vw !important; 
   font-weight: bold;
+  margin-left: 2vw;
   
+}
+.container {
+  display: flex;
+}
+
+.image-container, .details-container {
+  flex: 1;
+  background-color: black;
+  height: 80vh;
+  color: white
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
+  
+}
+
+.details-container {
+  padding: 20px; 
 }
