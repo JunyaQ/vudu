@@ -22,14 +22,14 @@ function Movies(){
         <div id='Movies' className='movies'>
         <Container fluid>
           <div>
-       <h2>Free: New Releases</h2>
+       <h2 className='mainpageTitle'>Free: New Releases</h2>
        {/* make it 4 at a time and can expand to 12 if have time */}
         </div>
         <Row md={6} className='justify-content-center'>
        {films.slice(0,4).map(film => (
          <Col className="d-flex justify-content-center movieSection">
         <Link to={`/movies/${film.id}`}>
-        <img src={require(`../imgs/movies/${film.img}.jpeg`)} className='tvimg' /> 
+        <img src={require(`../imgs/movies/${film.img}.jpeg`)} className='tvmovieimg' /> 
         </Link>
         </Col>
     ))}

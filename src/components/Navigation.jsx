@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container,Nav, Navbar,Form, Button} from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
-import logo from '../imgs/logo.png';
+import { RiMovie2Fill } from "react-icons/ri";
 import Login from './Login';
 
 
@@ -10,23 +10,23 @@ function Navigation(){
   
     return(
         <div>
-        <Navbar bg="dark" data-bs-theme="dark">
+        <Navbar className='navigation'>
           <Container>
-          <Nav className='justify-content-front'>
-            <Navbar.Brand href='/'><img src={logo} className='logo'/></Navbar.Brand>
+          <Nav className='justify-content-front '>
+            <Navbar.Brand href='/'><RiMovie2Fill size={40} color='white'/></Navbar.Brand>
             </Nav>
             <Nav className="me-auto">
-              <Nav.Link href='/movies'>Moives</Nav.Link>
-              <Nav.Link href='/tvs'>TV</Nav.Link>
-              <Nav.Link href='/free'>Free</Nav.Link>
-              <Nav.Link href='/myvudu'>MyVudu</Nav.Link>
+              <Nav.Link href='/movies' className='navlinks'>Moives</Nav.Link>
+              <Nav.Link href='/tvs' className='navlinks'>TV</Nav.Link>
+              <Nav.Link href='/free' className='navlinks'>Free</Nav.Link>
+              <Nav.Link href='/myvudu' className='navlinks'>MyVudu</Nav.Link>
               
             </Nav>
 
-            <Nav className='justify-content-end'>
-            <Nav.Link href='/Redeem'>Redeem</Nav.Link>
+            <Nav className='justify-content-end navlinks'>
+            <Nav.Link href='/Redeem' className='navlinks'>Redeem</Nav.Link>
             {/* model from bootstrap */}
-            <Nav.Link > <Login show={modalShow} onHide={() => setModalShow(false)} onClick={() => Login(true)} /></Nav.Link>
+            <Nav.Link  className='navlinks'> <Login show={modalShow} onHide={() => setModalShow(false)} onClick={() => Login(true)} /></Nav.Link>
             <Form className="d-flex">
             <Form.Control
               type="search"

@@ -38,26 +38,26 @@ function Footer(){
                 <Col> 
                 <ul className='infolist'>
                     <li className='fheading'>Features</li>
-                    <li>Lists</li>
-                    <li>Family</li>
-                    <li>Disc to Digital</li>
-                    <li>InstaWatch</li>
-                    <li>Movies Anywhere</li>
+                    <li> <a href='/comingsoon'>Lists</a></li>
+                    <li> <a href='/comingsoon'>Family </a></li>
+                    <li> <a href='/comingsoon'>Disc to Digital</a></li>
+                    <li> <a href='/comingsoon'>InstaWatch</a></li>
+                    <li> <a href='/comingsoon'>Movies Anywhere </a></li>
                 </ul>
                 </Col>
 
                 <Col>
                 <ul className='infolist'>
                     <li className='fheading'>Help</li>
-                    <li>About Us</li>
-                    <li>Devices</li>
-                    <li>Support</li>
-                    <li>Forums</li>
-                    <li>Contact Us</li>
-                    <li>Jobs</li>
+                    <li><a href='/comingsoon'>About Us</a></li>
+                    <li> <a href='/comingsoon'>Devices</a></li>
+                    <li><a href='/comingsoon'>Support</a></li>
+                    <li><a href='/comingsoon'>Forums</a></li>
+                    <li><a href='/comingsoon'>Contact Us</a></li>
+                    <li><a href='/comingsoon'>Jobs</a></li>
                 </ul>
                  </Col>
-                </Row>
+                
                 
                 <Row  className='media justify-content-end'>
                 <Col xs="auto" className='medialogo'> 
@@ -78,6 +78,7 @@ function Footer(){
                     <FaYoutubeSquare size={30} color='red'/>
                 </a> 
                 </Col>
+                </Row>
                 </Row>
             </Container>
 

@@ -5,15 +5,20 @@
   --orange: #F49E4C;
   --bric: #AB3428;
   --shadow: #E0E0E0;
+  --white: #FFFFFF;
 }
 
 body{
   min-height: 45vh;
 }
  /* -----------------Navigation ----------------*/
-.logo{
-    height: 5vh;
+.navigation{
+  background-color: var(--darkBlue);
 }
+.navlinks{
+  color: var(--white) !important;
+}
+
  /* -----------------Hero ----------------*/
 .heroSection{
     margin-bottom: 5vh;
@@ -28,7 +33,7 @@ body{
 .hero{
     max-width: 100%;
 }
- /* -----------------Movie Section ----------------*/
+ /* -----------------Movie Section, Tv Section ----------------*/
 .movies{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -37,9 +42,8 @@ body{
 .movieSection{
   margin-bottom: 5vh;
 }
-
- /* -----------------TV Section----------------*/
-  .tvimg{
+/* sharing with tabOptions */
+  .tvmovieimg{
     width: 12vw;
     height: auto;
     display: block;
@@ -48,13 +52,16 @@ body{
     border-style: solid;
     color: black;
     box-shadow: 10px 5px 5px var(--shadow);
-    
   }
-  .tvs{
-    padding-right: 10vw;
-    padding-left: 10vw;
-    margin-bottom: 5vh;
+  .tvmovieimg:hover{
+    transform: scale(1.2);
   }
+  .mainpageTitle{
+    text-align: left;
+    text-shadow: 2px 1px 1px var(--shadow);
+    margin-top: 3vh;
+  }
+  
  /* -----------------Footer ----------------*/
 .downloadimg{
     width: 10vw;
@@ -63,13 +70,21 @@ body{
 }
 .info{
     margin-bottom: 2vh;    
+    background-color: var(--munsell);
+    color: var(--white);
 }
 .infolist{
     list-style: none;
 }
+.infolist a{
+  text-decoration: none;
+  color: var(--white);
+}
 .fheading{
     font-weight: bolder;
     font-size: x-large;
+    text-shadow: 1px 1px 1px  var(--shadow);
+    margin-bottom: 2vh;
 }
 .infolist li{
     margin-top: 1vh;
@@ -145,16 +160,15 @@ body{
   grid-column: span 2;
   color: var(--vanilla);
   text-align: center;
-  text-shadow: 2px 1px 1px#F49E4C;
+  text-shadow: 2px 1px 1px var(--orange);
   margin-top: 3vh;
 }
-
 .content-image {
   grid-column: span 1;
   height: 25vh;
   width: auto;
   border-style: solid;
-  color: white;
+  color: var(--darkBlue);
   box-shadow: 3px 1px 1px var(--shadow);
 }
 
@@ -163,4 +177,7 @@ body{
   height: 25vh;
   width: auto;
   margin-right: 2vw;
+  border-style: solid;
+  color: var(--darkBlue);
+  box-shadow: 3px 1px 1px var(--shadow);
 }

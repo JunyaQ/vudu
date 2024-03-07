@@ -18,14 +18,14 @@ function Tvs(){
         <div id='Tvs' className='movies'>
             <Container fluid>
               <div>
-           <h2>Free: New Releases</h2>
+           <h2 className='mainpageTitle'>Free: New Releases</h2>
            {/* make it 6 at a time and can expand to 12 if have time */}
             </div>
             <Row md={6} className='justify-content-center'>
            {tvs.slice(0,4).map(tv => (
              <Col className="d-flex justify-content-center movieSection">
             <Link to={`/tvs/${tv.id}`}>
-            <img src={require(`../imgs/movies/${tv.img}.jpeg`)} className='tvimg'/> 
+            <img src={require(`../imgs/movies/${tv.img}.jpeg`)} className='tvmovieimg'/> 
             </Link>
             </Col>
         ))}
