@@ -27,7 +27,7 @@ const Login = () => {
               <Form.Control type="password" placeholder="Password"/>
             </Form.Group>
             <div className='text-center submitBtn'>
-            <Button variant="dark" onClick={handleClose} type="submit">Submit</Button>
+            <Button onClick={handleClose} type="submit">Login</Button>
             </div>
           </Form>
         </Modal.Body>

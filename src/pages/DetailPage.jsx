@@ -32,9 +32,7 @@ function DetailPage({type}){
  }
  return (
   <div className="container">
-  <div className="image-container">
-    <img src={require(`../imgs/background/${item.img}.jpeg`)} alt="Property" />
-  </div>
+    <img src={require(`../imgs/background/${item.img}.jpeg`)} alt="background" className="image-container" />
   <div className="details-container">
     <Detail
       img={item.img}

@@ -22,7 +22,7 @@ function Tvs(){
            {/* make it 6 at a time and can expand to 12 if have time */}
             </div>
             <Row md={6} className='justify-content-center'>
-           {tvs.map(tv => (
+           {tvs.slice(0,4).map(tv => (
              <Col className="d-flex justify-content-center movieSection">
             <Link to={`/tvs/${tv.id}`}>
             <img src={require(`../imgs/movies/${tv.img}.jpeg`)} className='tvimg'/> 

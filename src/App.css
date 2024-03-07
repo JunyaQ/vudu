@@ -28,7 +28,7 @@ body{
     max-width: 100%;
 }
  /* -----------------Movie Section ----------------*/
-  .movies{
+.movies{
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 5vh;
@@ -36,10 +36,6 @@ body{
 .movieSection{
   margin-bottom: 5vh;
 }
-
-
-
-
 
   /* Tvs Section */
   .tvimg{
@@ -97,7 +93,7 @@ body{
   font-weight: bold;
   margin-left: 2vw; 
 }
-.container {
+/* .container {
   display: flex;
 }
 .image-container, .details-container {
@@ -109,9 +105,31 @@ img {
 }
 .details-container {
   padding: 20px; 
-}
+} */
 .btn{
   margin-left: 4vw;
   background-color: var(--munsell) !important;
   color: var(--vanilla) !important;
+}
+.container{
+  width: 100vw;
+  height: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  /* opacity: 0.7; */
+}
+.details-container{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+
+}
+.detailContainer{
+  display: flex;
+}
+.movieimg{
+  width:10vw;
+  height: auto;
+
 }
