@@ -19,12 +19,10 @@ function Navigation(){
               <Nav.Link href='/movies' className='navlinks'>Moives</Nav.Link>
               <Nav.Link href='/tvs' className='navlinks'>TV</Nav.Link>
               <Nav.Link href='/free' className='navlinks'>Free</Nav.Link>
-              <Nav.Link href='/myvudu' className='navlinks'>MyVudu</Nav.Link>
               
             </Nav>
 
             <Nav className='justify-content-end navlinks'>
-            <Nav.Link href='/Redeem' className='navlinks'>Redeem</Nav.Link>
             {/* model from bootstrap */}
             <Nav.Link  className='navlinks'> <Login show={modalShow} onHide={() => setModalShow(false)} onClick={() => Login(true)} /></Nav.Link>
             <Form className="d-flex">

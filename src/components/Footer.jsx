@@ -11,7 +11,7 @@ function Footer(){
     return(
         <div>
             <Container fluid> 
-                <Row className='download' xs="auto">
+                <Row className='download info' xs="auto">
                     <Col><img src={apple} className='downloadimg'href="https://apple.com/ca/app-store/"/></Col>
                     <Col><img src={google} className='downloadimg' href="https://play.google.com/store/games?hl=en&gl=US"/></Col>
                 </Row>

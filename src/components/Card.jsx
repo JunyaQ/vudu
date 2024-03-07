@@ -7,7 +7,7 @@ function Card({pic, name}){
             <Col className="d-flex justify-content-center">
             <img src={pic} className='cardImg'/> 
             </Col>
-            <p className="cardName">{name}</p>
+            <h2 className="cardName">{name}</h2>
         </div>
     )
 }

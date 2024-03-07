@@ -8,11 +8,11 @@ const Login = () => {
 
   return (
     <div>
-      <Nav variant="dark" onClick={handleShow}>Login</Nav>
+      <Nav onClick={handleShow}>Login</Nav>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Log in</Modal.Title>
+          <Modal.Title>Log in/Sign up</Modal.Title>
         </Modal.Header>
         <Modal.Body>
 
@@ -27,7 +27,11 @@ const Login = () => {
               <Form.Control type="password" placeholder="Password"/>
             </Form.Group>
             <div className='text-center submitBtn'>
-            <Button onClick={handleClose} type="submit">Login</Button>
+            <Button onClick={handleClose} type="submit" className='button'>Login</Button>
+            </div>
+
+            <div>
+              <span>Don't have an account? <a href='/Signup'>Signup</a></span>
             </div>
           </Form>
         </Modal.Body>
