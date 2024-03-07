@@ -4,6 +4,7 @@
   --vanilla: #F5EE9E;
   --orange: #F49E4C;
   --bric: #AB3428;
+  --shadow: #E0E0E0;
 }
 
 body{
@@ -37,7 +38,7 @@ body{
   margin-bottom: 5vh;
 }
 
-  /* Tvs Section */
+ /* -----------------TV Section----------------*/
   .tvimg{
     width: 12vw;
     height: auto;
@@ -46,13 +47,15 @@ body{
     margin-right: auto;
     border-style: solid;
     color: black;
+    box-shadow: 10px 5px 5px var(--shadow);
+    
   }
   .tvs{
     padding-right: 10vw;
     padding-left: 10vw;
     margin-bottom: 5vh;
   }
-/* Footer */
+ /* -----------------Footer ----------------*/
 .downloadimg{
     width: 10vw;
     left: 0; 
@@ -75,42 +78,21 @@ body{
     margin-bottom: 1vh;
     bottom: 10vh;
 }
-/* login offcanvas */
+ /* ----------------- Login OffCanvas ----------------*/
 .submitBtn{
   margin-top: 2vh;
 }
 .loginform{
   margin-top: 2vh;
 }
-/* tab movie section */
+ /* ----------------- Tab movie Sectrion ----------------*/
 .tabMovieSection{
   margin-bottom: 5vh;
   margin-top: 5vh;
 }
-/* Detail */
-.detailTitle{
-  font-size: 4vw !important; 
-  font-weight: bold;
-  margin-left: 2vw; 
-}
-/* .container {
-  display: flex;
-}
-.image-container, .details-container {
-  flex: 1;
-}
-img {
-  max-width: 100%; 
-  height: auto;  
-}
-.details-container {
-  padding: 20px; 
-} */
-.btn{
-  margin-left: 4vw;
-  background-color: var(--munsell) !important;
-  color: var(--vanilla) !important;
-}
+ /* ----------------- DetailPage ----------------*/
+
+
 .container{
   width: 100vw;
   height: auto;
@@ -119,17 +101,66 @@ img {
   color: white;
   /* opacity: 0.7; */
 }
-.details-container{
+
+.detailInfo-container{
   position: absolute;
   top: 8px;
   right: 16px;
 
 }
-.detailContainer{
+ /* ----------------- Detail ----------------*/
+ .detailContainer{
   display: flex;
 }
 .movieimg{
   width:10vw;
   height: auto;
+}
+.btn{
+  margin-left: 4vw;
+  background-color: var(--munsell) !important;
+  color: var(--vanilla) !important;
+}
+.detailTitle{
+  font-size: 4vw !important; 
+  font-weight: bold;
+  margin-left: 2vw; 
+}
+ /* ----------------- Content ----------------*/
+ .content-section{
+  padding-right: 2vw;
+  padding-left: 2vw;
+ }
+ .content1{
+  background-color: var(--darkBlue);
+  max-width: 90vw;
+  margin: 2vw auto;
+  width: 100%;
+  box-shadow: 5px 2px 2px var(--munsell);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5vw;
+ }
+.title {
+  grid-column: span 2;
+  color: var(--vanilla);
+  text-align: center;
+  text-shadow: 2px 1px 1px#F49E4C;
+  margin-top: 3vh;
+}
 
+.content-image {
+  grid-column: span 1;
+  height: 25vh;
+  width: auto;
+  border-style: solid;
+  color: white;
+  box-shadow: 3px 1px 1px var(--shadow);
+}
+
+.wide-image {
+  grid-column: span 2; 
+  height: 25vh;
+  width: auto;
+  margin-right: 2vw;
 }

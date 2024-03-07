@@ -1,19 +1,25 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-
+import { Container,Row, Col, Image } from "react-bootstrap";
+import movie1 from "../imgs/movies/movie1.jpeg";
 function Content(){
 return(
 <div>
-<section className="content-section bg-light">
+<section className="content-section">
         <Container fluid className="content1">
-          <h2>$5.99 CINEMA SPOTLIGHT</h2>
-          <Row className="justify-content-md-center">
-            <Col md={6}>
-            </Col>
-            <Col md={6}>
-              <Image  fluid />
-            </Col>
-          </Row>
+          <div className="title">
+          <h2>$5.99 <br/>CINEMA <br/>SPOTLIGHT</h2>
+          </div>
+
+          <img className="content-image" src={require(`../imgs/movies/movie2.jpeg`)}/>
+          <img className="content-image" src={require(`../imgs/movies/movie7.jpeg`)}/>
+          <img className="content-image" src={require(`../imgs/movies/movie5.jpeg`)}/>
+       
+
+          <div className="wide-container">
+            <img  className="wide-image" src={require(`../imgs/background/movie4.jpeg`)}/>
+          </div>
+
+          
         </Container>
       </section>
 </div>
