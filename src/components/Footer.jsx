@@ -12,8 +12,8 @@ function Footer(){
         <div>
             <Container fluid> 
                 <Row className='download info' xs="auto">
-                    <Col><img src={apple} className='downloadimg'href="https://apple.com/ca/app-store/"/></Col>
-                    <Col><img src={google} className='downloadimg' href="https://play.google.com/store/games?hl=en&gl=US"/></Col>
+                    <Col><a href="https://apple.com/ca/app-store/"><img src={apple} className='downloadimg'/></a></Col>
+                    <Col><a href="https://play.google.com/store/games?hl=en&gl=US"><img src={google} className='downloadimg'/></a></Col>
                 </Row>
 
                 <Row className='info'>

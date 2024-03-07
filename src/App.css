@@ -18,7 +18,7 @@ body{
 .navlinks{
   color: var(--white) !important;
 }
-/* same as nav*/
+/* same as search*/
 .search{
   background-color: var(--darkBlue) !important;
   border-color: var(--darkBlue) !important;
@@ -79,7 +79,7 @@ body{
 }
 .info{
     margin-bottom:0;    
-    background-color: var(--munsell);
+    background-color: var(--darkBlue);
     color: var(--white);
 }
 .infolist{
