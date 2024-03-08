@@ -7,6 +7,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "concurrent": "^0.3.2",
+    "concurrently": "^8.2.2",
     "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
@@ -17,11 +19,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start":"npm run server & npm run starts",
+    "starts": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npx json-server --watch pubnlic/db.json --port 3001"
+    "server": "npx json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
