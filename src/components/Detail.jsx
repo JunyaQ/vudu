@@ -2,7 +2,7 @@ import React from "react";
 function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
     return(
         <div className="detailContainer">
-            <div className="movieimg">
+            <div className="movieimg-container">
             <img src={require(`../imgs/movies/${img}.jpeg`)} className='movieimg'/>
             </div>
             <div>
