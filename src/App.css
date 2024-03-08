@@ -7,6 +7,12 @@
   --shadow: #D0D0D0;
   --white: #FFFFFF;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 body{
   min-height: 45vh;
@@ -51,6 +57,7 @@ body{
   padding-top: 5vh;
   margin-bottom: 5vh;
 }
+
 /* sharing with tabOptions */
   .tvmovieimg{
     width: 12vw;
@@ -62,6 +69,17 @@ body{
     color: black;
     box-shadow: 10px 5px 5px var(--shadow);
   }
+  /* smart phone  */
+@media(max-width: 600px){
+  .tvmovieimg{
+    width: 25vw;
+  }
+  .movieSection{
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+}
   .tvmovieimg:hover{
     transform: scale(1.2);
   }
@@ -150,6 +168,7 @@ input:focus {
   color: var(--bric);
   margin-left: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 
  /* ----------------- Tab movie Sectrion ----------------*/
@@ -161,73 +180,134 @@ input:focus {
 
 
 .container{
+  display: flex;
+  align-items: stretch;
   width: 100vw;
-  height: auto;
-  position: relative;
-  text-align: center;
+}
+.detailInfo-container{
+  background-color: black;
+  min-width: 50vw;
+  max-width: 60vw;
   color: white;
-  /* opacity: 0.7; */
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.image-background {
+  flex: 1;
+  display: block;
+  object-fit: cover;
+  max-width: 30vw;
+  height: auto;
+}
+.rightImg{
+  width: 400px;
+  height: auto;
 }
 
-.detailInfo-container{
-  position: absolute;
-  top: 8px;
-  right: 16px;
-
+@media(max-width: 600px){
+.container{
+  flex-direction: column;
+}
+.image-background, .detailInfo-container{
+  flex: none;
+  width: 100vw;
+  height: auto;
+}
 }
  /* ----------------- Detail ----------------*/
  .detailContainer{
-  display: flex;
+  display: grid;
+  margin-right: 2vw;
 }
 .movieimg{
   width:10vw;
   height: auto;
+  margin-right: 2vw;
 }
 .detailTitle{
   font-size: 4vw !important; 
   font-weight: bold;
-  margin-left: 2vw; 
-}
- /* ----------------- Content ----------------*/
- .content-section{
-  padding-right: 2vw;
-  padding-left: 2vw;
- }
- .content1{
-  background-color: var(--darkBlue);
-  max-width: 90vw;
-  margin: 2vw auto;
-  width: 100%;
-  box-shadow: 5px 2px 2px var(--shadow);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5vw;
- }
-.title {
-  grid-column: span 2;
-  color: var(--orange);
   text-align: center;
-  text-shadow: 2px 1px 1px var(--vanilla);
-  margin-top: 3vh;
 }
-.content-image {
-  grid-column: span 1;
-  height: 25vh;
-  width: auto;
-  border-style: solid;
-  color: var(--darkBlue);
-  box-shadow: 3px 1px 1px var(--shadow);
+.category {
+  display: inline-block; 
+  margin-right: 1vw; 
+  margin-left: 1vw;
+}
+.description{
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+.buyBtn{
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 10vh;
+  background-color: var(--munsell);
+  color: var(--white);
+  box-shadow: 2px 1px 1px var(--shadow);
+}
+.rentBtn{
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 10vh;
+  background-color: var(--munsell);
+  color: var(--white);
+  box-shadow: 2px 1px 1px var(--shadow);
+}
+.buyBtn:hover .rentBtn:hover{
+  background-color: var(--orange);
+}
+.category-container{
+  text-align: center;
+}
+.btn-container{
+  text-align: center;
 }
 
-.wide-image {
-  grid-column: span 2; 
-  height: 25vh;
+ /* ----------------- Content ----------------*/
+ .content-section{
   width: auto;
-  margin-right: 2vw;
-  border-style: solid;
-  color: var(--darkBlue);
-  box-shadow: 3px 1px 1px var(--shadow);
+  padding-right: 2vw;
+  padding-left: 2vw;
+  background-color: var(--darkBlue);
+  box-shadow: 10px 5px 5px var(--munsell);
+ }
+
+
+.content-row {
+  align-items: center; 
 }
+.content-title{
+  text-align: center;
+  justify-content: left;
+  color: var(--vanilla);
+  text-shadow: 2px 1px 1px var(--orange);
+}
+
+.content-title h1{
+  font-size: 2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0; 
+  overflow: visible 
+}
+
+.content-v {
+  width: 10vw;
+  height: auto;
+  margin-left: 10vw;
+}
+
+/* smaller than 768 tested*/
+@media (max-width: 768px) {
+  .v4, .v3, .v2, .v1 {
+  display: none;
+  }
+
+
+}
+
  /* ----------------- Card ----------------*/
  .cardImg{
   height: 30vh;
@@ -253,6 +333,12 @@ input:focus {
     text-align: center;
     text-shadow: 2px 1px 1px var(--shadow);
     margin-top: 3vh;
+  }
+  .title{
+  text-align: center;
+  justify-content: left;
+  color: var(--vanilla);
+  text-shadow: 2px 1px 1px var(--orange);
   }
     /* ----------------- Coming soon ----------------*/
     .comingsoon{

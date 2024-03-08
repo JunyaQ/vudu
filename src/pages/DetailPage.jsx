@@ -32,7 +32,6 @@ function DetailPage({type}){
  }
  return (
   <div className="container">
-    <img src={require(`../imgs/background/${item.img}.jpeg`)} alt="background" className="image-container" />
   <div className="detailInfo-container">
     <Detail
       img={item.img}
@@ -44,6 +43,9 @@ function DetailPage({type}){
       buyPrice={item.buyPrice}
     />
   </div>
+  <div className="image-background">
+    <img src={require(`../imgs/background/${item.img}.jpeg`)} alt="background" className="rightImg"/>
+    </div>
 </div>
 
   
