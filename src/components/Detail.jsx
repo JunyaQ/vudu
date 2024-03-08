@@ -3,7 +3,7 @@ function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
     return(
         <div className="detailContainer">
             <div className="movieimg-container">
-            <img src={require(`../imgs/movies/${img}.jpeg`)} className='movieimg'/>
+            <img src={`${img}`} className='movieimg'/>
             </div>
             <div>
             <h1 className="detailTitle">{title}</h1>

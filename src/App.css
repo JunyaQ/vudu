@@ -38,24 +38,25 @@ body{
   width: 100%;
 }
 }
-
  /* -----------------Hero ----------------*/
-.heroSection{
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-    position: relative;
-    width: 100%;
-    box-shadow: 10px 5px 5px var(--shadow);
+ .heroSection{
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  position: relative;
+  width: 100%;
+  box-shadow: 10px 5px 5px var(--shadow);
 }
 .heroimg{
-  width: 100%; 
-  height: auto;
+width: 100%; 
+height: auto;
 }
 
 .hero{
-    max-width: 100%;
-    
+  max-width: 100%;
+  
 }
+
+ 
  /* -----------------Movie Section, Tv Section ----------------*/
 .movies{
     margin-left: 5vw;
@@ -156,96 +157,14 @@ body{
     margin-bottom: 1vh;
     bottom: 10vh;
 }
- /* ----------------- Login/Signup  ----------------*/
-.loginBtn{
-  background-color: var(--darkBlue) !important;
-  text-align: center;
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-bottom: 2vh;
-  margin-top: 5vh;
-  color: white;
-  border: none;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-loginBtn:hover{
-  opacity: 0.7;
-}
-.form-header{
-  text-align: center;
-  margin-top: 5vh;
-}
-.form-body form{
-  max-width: 620px;
-  margin: auto;
-  padding: 10px;
-  background: white;
-}
-input {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: whitesmoke;
-}
-input:focus {
-  background-color: gainsboro;
-  outline: none;
-}
-.switchline{
-  margin-left: 20vw;
-  margin-right: 30vw;
-  display: inline-block;
-}
-.switch{
-  color: var(--bric);
-  margin-left: 5px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
+ 
  /* ----------------- Tab movie Sectrion ----------------*/
 .tabMovieSection{
   margin-bottom: 5vh;
   margin-top: 5vh;
 }
- /* ----------------- DetailPage ----------------*/
-.container{
-  display: flex;
-  align-items: stretch;
-  width: 100vw;
-}
-.detailInfo-container{
-  background-color: black;
-  min-width: 50vw;
-  max-width: 20vw;
-  color: white;
-  flex: 1;
-  padding: 0;
-  margin: 0;
-}
-.image-background {
-  flex: 1;
-  display: block;
-  object-fit: cover;
-  max-width: 50vw;
-  height: auto;
-}
-.rightImg{
-  width: 35vw;
-  height: auto;
-}
 
-@media(max-width: 600px){
-  .image-background{
-    display: none;
-  }
- 
 
-}
  /* ----------------- Detail ----------------*/
  .detailContainer{
   display: grid;
@@ -362,23 +281,5 @@ input:focus {
   margin-top: 5vh;
  }
 
-  /* ----------------- Free ----------------*/
-  .freeTitle{
-    color: black;
-    text-align: center;
-    text-shadow: 2px 1px 1px var(--shadow);
-    margin-top: 3vh;
-  }
-  .title{
-  text-align: center;
-  justify-content: left;
-  color: var(--vanilla);
-  text-shadow: 2px 1px 1px var(--orange);
-  }
-    /* ----------------- Coming soon ----------------*/
-    .comingsoon{
-      min-height: 50vh;
-      text-align: center;
-      color: var(--orange);
-      text-shadow: 2px 1px 1px var(--vanilla);
-    }
+  
+  

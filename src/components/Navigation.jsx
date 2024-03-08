@@ -16,22 +16,12 @@ function Navigation(){
             <Nav className="me-auto navlinks navphone">
               <Nav.Link href='/movies' className='navlinks'>Moives</Nav.Link>
               <Nav.Link href='/tvs' className='navlinks'>TV</Nav.Link>
-              <Nav.Link href='/free' className='navlinks'>Free</Nav.Link>
-              
+              <Nav.Link href='/free' className='navlinks'>Free</Nav.Link>     
             </Nav>
-
+            
             <Nav className='justify-content-end navlinks'>
-            {/* model from bootstrap */}
             <Nav.Link  className='navlinks' href='/loginSignup'> Login </Nav.Link>
-            <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button className="search"><FaSearch color='White' size={20}/></Button>
-          </Form>
+           
             </Nav>
           </Container>
         </Navbar>

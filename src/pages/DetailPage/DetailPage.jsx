@@ -1,9 +1,7 @@
 import React,{useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
-import Detail from "../components/Detail";
-
-
-
+import Detail from "../../components/Detail";
+import './DetailPage.css';
 
 
 function DetailPage({type}){
@@ -44,7 +42,7 @@ function DetailPage({type}){
     />
   </div>
   <div className="image-background">
-    <img src={require(`../imgs/background/${item.img}.jpeg`)} alt="background" className="rightImg"/>
+    <img src={`${item.background}`} alt="background" className="rightImg"/>
     </div>
 </div>
 

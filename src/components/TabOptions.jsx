@@ -38,7 +38,7 @@ function TabOptions({dbdata, type}){
              <Col className="d-flex justify-content-center movieSection" >
                 {/* use link and id, plus dbname movie1 or tv1 */}
             <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvmovieimg'/> 
+            <img src={`${item.img}`} className='tvmovieimg'/> 
             </Link>
             </Col>
         ))}
@@ -51,7 +51,7 @@ function TabOptions({dbdata, type}){
            {yearData.map(item => (
              <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvmovieimg'/> 
+           <img src={`${item.img}`} className='tvmovieimg'/> 
             </Link>
             </Col> 
         ))}
@@ -64,7 +64,7 @@ function TabOptions({dbdata, type}){
            {alphabetData.map(item => (
              <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>
-            <img src={require(`../imgs/movies/${item.img}.jpeg`)} className='tvmovieimg'/> 
+           <img src={`${item.img}`} className='tvmovieimg'/> 
             </Link>
             </Col> 
         ))}

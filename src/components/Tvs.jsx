@@ -25,7 +25,7 @@ function Tvs(){
            {tvs.slice(0,4).map(tv => (
              <Col className="d-flex justify-content-center movieSection">
             <Link to={`/tvs/${tv.id}`}>
-            <img src={require(`../imgs/movies/${tv.img}.jpeg`)} className='tvmovieimg'/> 
+            <img src= {`${tv.img}`} className='tvmovieimg' /> 
             </Link>
             </Col>
         ))}

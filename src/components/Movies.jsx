@@ -29,7 +29,7 @@ function Movies(){
        {films.slice(0,4).map(film => (
          <Col className="d-flex justify-content-center movieSection">
         <Link to={`/movies/${film.id}`}>
-        <img src={require(`../imgs/movies/${film.img}.jpeg`)} className='tvmovieimg' /> 
+        <img src= {`${film.img}`} className='tvmovieimg' /> 
         </Link>
         </Col>
     ))}

@@ -1,6 +1,8 @@
 import React,{useState}  from 'react';
-import Card from '../components/Card';
+import Card from '../../components/Card';
 import { Link } from 'react-router-dom';
+import './FreePage.css';
+
 function FreePage() {
     function getDate() {
         const today = new Date();
@@ -32,7 +34,7 @@ function FreePage() {
         <h1 className='freeTitle'>Watch it for free</h1>
         <h5 className="freeTitle">{currentDate}</h5>
         <Link  className= "cardName" to={`/movies/movie1`}>
-        <Card pic={require(`../imgs/movies/movie1.jpeg`)} name={"Avatar - The way of Water"}/>
+        <Card pic={require(`../../imgs/movies/movie1.jpeg`)} name={"Avatar - The way of Water"}/>
         </Link>
         </body>
 

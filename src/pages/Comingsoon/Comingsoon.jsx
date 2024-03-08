@@ -1,5 +1,6 @@
 import React from "react";
 import { LuConstruction } from "react-icons/lu";
+import './Comingsoon.css'
 function Comingsoon(){
     return(
         <div className="comingsoon">

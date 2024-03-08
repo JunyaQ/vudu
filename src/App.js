@@ -3,16 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes ,Route, BrowserRouter } from "react-router-dom";
 import Navigation from './components/Navigation'
 import Footer from './components/Footer';
-import MainPage from './pages/MainPage';
-import MoviePage from './pages/MoviePage';
-import TvPage from './pages/TvPage';
-import FreePage from './pages/FreePage';
-import LoginSignupPage from './pages/LoginSignupPage';
-import DetailPage from './pages/DetailPage';
+import MainPage from './pages/MainPage/MainPage';
+import MoviePage from './pages/MoviePage/MoviePage';
+import TvPage from './pages/TvPage/TvPage';
+import FreePage from './pages/FreePage/FreePage';
+import LoginSignupPage from './pages/LoginSignupPage/LoginSignupPage';
+import DetailPage from './pages/DetailPage/DetailPage';
 //temp test
 import Login from './components/Login';
 // coming soon
-import Comingsoon from './pages/Comingsoon';
+import Comingsoon from './pages/Comingsoon/Comingsoon';
 
 
 function App() {
