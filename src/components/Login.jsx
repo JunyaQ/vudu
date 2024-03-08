@@ -1,44 +1,60 @@
-import React, { useState } from 'react';
-import { Button, Modal, Form, Nav } from 'react-bootstrap';
+    import React, { useState } from 'react';
+    import { Link } from 'react-router-dom';
 
-const Login = () => {
-  const [show, setShow] = useState(false); 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+    function Login (){
+    const [formState, setFormState] = useState({ 
+    email: '', 
+    password: '' ,
+    });
 
-  return (
+    // update state based on form input changes
+    const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+    ...formState,
+    [name]: value,
+    });
+    };
+
+    // submit form
+    const handleFormSubmit =()=> {
+    // console.log("Submit a User login, logged in")
+    alert("User: "+ formState.email+ "Log ii with password: "+ formState.password);
+    };
+    return (
+    <div className="flex-row justify-center mb-4">
     <div>
-      <Nav onClick={handleShow}>Login</Nav>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Log in/Sign up</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-
-          <Form>
-            <Form.Group controlId="formBasicEmail" className='loginform'>
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword"  className='loginform'>
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password"/>
-            </Form.Group>
-            <div className='text-center submitBtn'>
-            <Button onClick={handleClose} type="submit" className='button'>Login</Button>
-            </div>
-
-            <div>
-              <span>Don't have an account? <a href='/Signup'>Signup</a></span>
-            </div>
-          </Form>
-        </Modal.Body>
-
-      </Modal>
+    <div className="form">
+      <div className="form-body">
+        <div className="form-container">
+    <form onSubmit={handleFormSubmit}>
+    <div className='label'>
+    <label htmlFor="email" className='label'><b>Email:</b></label>
+    <input className="form-input" placeholder="Your email"  name="email"   type="email" id="email"
+    value={formState.email}
+    onChange={handleChange}
+    />
     </div>
-  );
-};
+    <br/>
+    <div className='label'>
+    <label htmlFor="password"><b>Password:</b></label>
+    <input className="form-input" placeholder="******"  name="password"  type="password"  id="password"
+    value={formState.password}
+    onChange={handleChange}
+    />
+    </div>
+    <button className="loginBtn label" type="submit">
+    Login
+    </button>
+    </form>
+    </div>
 
-export default Login;
+      </div>
+    </div>
+    </div>
+    </div>
+    );
+    };
+
+    export default Login;

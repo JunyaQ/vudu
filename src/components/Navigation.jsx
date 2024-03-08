@@ -6,8 +6,6 @@ import Login from './Login';
 
 
 function Navigation(){
-  const [modalShow, setModalShow] = useState(false);
-  
     return(
         <div>
         <Navbar className='navigation'>
@@ -24,7 +22,7 @@ function Navigation(){
 
             <Nav className='justify-content-end navlinks'>
             {/* model from bootstrap */}
-            <Nav.Link  className='navlinks'> <Login show={modalShow} onHide={() => setModalShow(false)} onClick={() => Login(true)} /></Nav.Link>
+            <Nav.Link  className='navlinks' href='/loginSignup'> Login </Nav.Link>
             <Form className="d-flex">
             <Form.Control
               type="search"
