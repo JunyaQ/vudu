@@ -13,7 +13,7 @@ function Navigation(){
           <Nav className='justify-content-front '>
             <Navbar.Brand href='/'><RiMovie2Fill size={40} color='white'/></Navbar.Brand>
             </Nav>
-            <Nav className="me-auto">
+            <Nav className="me-auto navlinks navphone">
               <Nav.Link href='/movies' className='navlinks'>Moives</Nav.Link>
               <Nav.Link href='/tvs' className='navlinks'>TV</Nav.Link>
               <Nav.Link href='/free' className='navlinks'>Free</Nav.Link>

@@ -21,13 +21,22 @@ body{
 .navigation{
   background-color: var(--darkBlue);
 }
-.navlinks{
+.navlinks .navlinks{
   color: var(--white) !important;
+  font-size: 1.5rem;
 }
 /* same as search*/
 .search{
   background-color: var(--darkBlue) !important;
   border-color: var(--darkBlue) !important;
+}
+@media(max-width: 600px){
+.navphone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 }
 
  /* -----------------Hero ----------------*/
@@ -72,11 +81,16 @@ body{
   /* smart phone  */
 @media(max-width: 600px){
   .tvmovieimg{
-    width: 25vw;
+    width: 15vw;
   }
   .movieSection{
     padding-top: 5vh;
     margin-bottom: 5vh;
+  }
+  .movies{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
   }
   
 }
@@ -95,6 +109,27 @@ body{
     left: 0; 
     margin-bottom: 2vh;
 }
+/* small screen other wise download img too small */
+@media(max-width: 850px){
+  .downloadimg{
+    width: 20vw;
+    margin-left: 20vw;
+  }
+  .infolist{
+    font-size: 0.8rem !important;
+    
+  }
+  .fheading{
+    font-size: 1.3rem !important;
+
+  }
+}
+@media(max-width: 300px){
+  .downloadimg{
+    width: 40vw;
+    margin-left: 30vw;
+  }
+}
 .info{
     margin-bottom:0;    
     background-color: var(--darkBlue);
@@ -102,6 +137,7 @@ body{
 }
 .infolist{
     list-style: none;
+    font-size: 1.5rem;
 }
 .infolist a{
   text-decoration: none;
@@ -109,7 +145,7 @@ body{
 }
 .fheading{
     font-weight: bolder;
-    font-size: x-large;
+    font-size: 2rem;
     text-shadow: 1px 1px 1px  var(--shadow);
     margin-bottom: 2vh;
 }

@@ -61,20 +61,20 @@ function Footer(){
                 
                 <Row  className='media justify-content-end'>
                 <Col xs="auto" className='medialogo'> 
-                <a href='https://www.linkedin.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.linkedin.com' target="_blank">
                      <FaLinkedin size={30} color='blue' />
                 </a> </Col>
                 <Col xs="auto" className='medialogo'> 
-                <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
-                    <FaFacebookSquare size={30} color='blue'/> 
+                <a href='https://www.facebook.com' target="_blank">                    
+                <FaFacebookSquare size={30} color='blue'/> 
                 </a></Col>
                 <Col xs="auto" className='medialogo'> 
-                <a href='https://www.twitter.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.twitter.com' target="_blank" >
                     <FaTwitterSquare size={30} color='lightblue'/> 
                 </a>
                 </Col>
                 <Col xs="auto" className='medialogo'> 
-                <a href='https://www.youtube.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.youtube.com' target="_blank">
                     <FaYoutubeSquare size={30} color='red'/>
                 </a> 
                 </Col>
