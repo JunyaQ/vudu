@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import {Container,Row, Col} from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
-import movie1 from '../imgs/movies/movie1.jpeg';
+
+
 
 
 

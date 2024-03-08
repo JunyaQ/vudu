@@ -1,4 +1,4 @@
-import React,{useState}  from 'react';
+import React,{useState,useEffect}  from 'react';
 import Card from '../../components/Card';
 import { Link } from 'react-router-dom';
 import './FreePage.css';
@@ -11,6 +11,14 @@ function FreePage() {
         const date = today.getDate();
         return `${month}/${date}/${year}`;
       }
+      const [films, setFilms] = useState([]);
+
+      useEffect(() => {
+        fetch('http://localhost:3001/movies')
+        .then(response => response.json())
+        .then(data => setFilms(data))
+        .catch(error => console.error('Error:', error));
+    }, []);
       const [currentDate, setCurrentDate] = useState(getDate());
       const [movielist, setMovieList] = useState([]);
     //  rotate every 12 days , so need to know the date number of the year, and then /12 use reminder to rotate
@@ -34,7 +42,7 @@ function FreePage() {
         <h1 className='freeTitle'>Watch it for free</h1>
         <h5 className="freeTitle">{currentDate}</h5>
         <Link  className= "cardName" to={`/movies/movie1`}>
-        <Card pic={require(`../../imgs/movies/movie1.jpeg`)} name={"Avatar - The way of Water"}/>
+        <Card pic={films?.[7]?.img} name={films?.[7]?.title}/>
         </Link>
         </body>
 

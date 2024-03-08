@@ -1,7 +1,20 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Container,Row, Col, Image } from "react-bootstrap";
-import movie1 from "../imgs/movies/movie1.jpeg";
 function Content(){
+  const [films, setFilms] = useState([]);
+
+  useEffect(() => {
+      fetch('http://localhost:3001/movies')
+      .then(response => response.json())
+      .then(data => setFilms(data))
+      .catch(error => console.error('Error:', error));
+  }, []);
+
+  const url1 = films?.[1]?.img;
+  const url2 = films?.[4]?.img;
+  const url3 = films?.[6]?.img;
+  const url4 = films?.[10]?.img;
+
 return(
 <div>
 <section className="content-section">
@@ -12,18 +25,17 @@ return(
               <h1>$5.99 <br />CINEMA <br />SPOTLIGHT</h1>
             </div>
           </Col>
-      
           <Col md={2}>
-            <img className="content-v v1" src={require('../imgs/movies/movie1.jpeg')} alt="Movie 1"/>
+            <img className="content-v v1" src={url1} alt="Movie 1"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v2" src={require('../imgs/movies/movie2.jpeg')} alt="Movie 2"/>
+            <img className="content-v v2" src={url2} alt="Movie 2"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v3" src={require('../imgs/movies/movie3.jpeg')} alt="Movie 3"/>
+            <img className="content-v v3" src={url3} alt="Movie 3"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v4" src={require('../imgs/background/movie4.jpeg')} alt="Movie 4"/>
+            <img className="content-v v4" src={url4} alt="Movie 4"/>
           </Col>
           
         </Row>
