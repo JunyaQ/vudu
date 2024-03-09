@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Carousel } from "react-bootstrap";
-import hero1 from "../imgs/hero1.jpeg";
-import hero2 from "../imgs/hero2.jpeg";
-import hero3 from "../imgs/hero3.jpeg";
-import hero4 from "../imgs/hero4.jpeg";
-import hero5 from "../imgs/hero5.jpeg";
-import hero6 from "../imgs/hero6.jpeg";
-import hero7 from "../imgs/hero7.jpeg";
-import hero8 from "../imgs/hero8.jpeg";
+import hero1 from "../../imgs/hero1.jpeg";
+import hero2 from "../../imgs/hero2.jpeg";
+import hero3 from "../../imgs/hero3.jpeg";
+import hero4 from "../../imgs/hero4.jpeg";
+import hero5 from "../../imgs/hero5.jpeg";
+import hero6 from "../../imgs/hero6.jpeg";
+import hero7 from "../../imgs/hero7.jpeg";
+import hero8 from "../../imgs/hero8.jpeg";
 function Hero() {
     return (
         <div>

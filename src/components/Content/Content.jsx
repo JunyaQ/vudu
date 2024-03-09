@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { Container,Row, Col, Image } from "react-bootstrap";
+import './Content.css';
 function Content(){
   const [films, setFilms] = useState([]);
 
@@ -26,16 +27,16 @@ return(
             </div>
           </Col>
           <Col md={2}>
-            <img className="content-v v1" src={url1} alt="Movie 1"/>
+            <img className="content-v" src={url1} alt="Movie 1"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v2" src={url2} alt="Movie 2"/>
+            <img className="content-v" src={url2} alt="Movie 2"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v3" src={url3} alt="Movie 3"/>
+            <img className="content-v" src={url3} alt="Movie 3"/>
           </Col>
           <Col md={2}>
-            <img className="content-v v4" src={url4} alt="Movie 4"/>
+            <img className="content-v" src={url4} alt="Movie 4"/>
           </Col>
           
         </Row>

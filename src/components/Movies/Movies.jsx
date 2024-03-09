@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import {Container,Row, Col} from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import './Movies.css'
 
 
 
@@ -21,9 +22,11 @@ function Movies(){
     return(
         <div id='Movies' className='movies'>
         <Container fluid>
-          <div>
-       <h2 className='mainpageTitle'>Free: New Releases</h2>
-       {/* make it 4 at a time and can expand to 12 if have time */}
+        <div className='option-container'>
+       <h2 className='mainpageTitle'>Featured Films</h2>
+       <Link to="/movies">
+       <button className='optionBtn'> View All</button>
+       </Link>
         </div>
         <Row md={6} className='justify-content-center'>
        {films.slice(0,4).map(film => (

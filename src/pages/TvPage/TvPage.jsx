@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import { Container } from "react-bootstrap";
-import TabOptions from '../../components/TabOptions';
+import TabOptions from '../../components/TabOptions/TabOptions';
 function TvPage() {
     const [tvs, setTvs] = useState([]);
 

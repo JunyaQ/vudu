@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Container,Nav, Navbar,Form, Button} from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import { RiMovie2Fill } from "react-icons/ri";
-import Login from './Login';
+import './Navigation.css';
 
 
 function Navigation(){
@@ -20,7 +20,7 @@ function Navigation(){
             </Nav>
             
             <Nav className='justify-content-end navlinks'>
-            <Nav.Link  className='navlinks' href='/loginSignup'> Login </Nav.Link>
+            <Nav.Link  className='navlinks' href='/loginSignup'> Member </Nav.Link>
            
             </Nav>
           </Container>

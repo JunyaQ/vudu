@@ -1,5 +1,6 @@
 import React from "react";
 import {Col} from "react-bootstrap";
+import './Card.css';
 
 function Card({pic, name}){
     return(

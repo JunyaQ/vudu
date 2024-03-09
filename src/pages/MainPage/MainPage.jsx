@@ -1,7 +1,7 @@
-import Hero from '../../components/Hero';
-import Movies from '../../components/Movies';
-import Tvs from '../../components/Tvs';
-import Content from '../../components/Content';
+import Hero from '../../components/Hero/Hero';
+import Movies from '../../components/Movies/Movies';
+import Tvs from '../../components/Tvs/Tvs';
+import Content from '../../components/Content/Content';
 function Main() {
 
     return(

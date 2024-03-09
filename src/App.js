@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes ,Route, BrowserRouter } from "react-router-dom";
-import Navigation from './components/Navigation'
-import Footer from './components/Footer';
+import Navigation from './components/Navigation/Navigation'
+import Footer from './components/Footer/Footer';
 import MainPage from './pages/MainPage/MainPage';
 import MoviePage from './pages/MoviePage/MoviePage';
 import TvPage from './pages/TvPage/TvPage';

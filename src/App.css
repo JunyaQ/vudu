@@ -3,7 +3,7 @@
   --munsell: #3B8EA5;
   --vanilla: #F5EE9E;
   --orange: #F49E4C;
-  --bric: #AB3428;
+  --brick: #AB3428;
   --shadow: #D0D0D0;
   --white: #FFFFFF;
 }
@@ -17,27 +17,7 @@
 body{
   min-height: 45vh;
 }
- /* -----------------Navigation ----------------*/
-.navigation{
-  background-color: var(--darkBlue);
-}
-.navlinks .navlinks{
-  color: var(--white) !important;
-  font-size: 1.5rem;
-}
-/* same as search*/
-.search{
-  background-color: var(--darkBlue) !important;
-  border-color: var(--darkBlue) !important;
-}
-@media(max-width: 600px){
-.navphone{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-}
+
  /* -----------------Hero ----------------*/
  .heroSection{
   margin-bottom: 5vh;
@@ -68,16 +48,7 @@ height: auto;
 }
 
 /* sharing with tabOptions */
-  .tvmovieimg{
-    width: 12vw;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    color: black;
-    box-shadow: 10px 5px 5px var(--shadow);
-  }
+
   /* smart phone  */
 @media(max-width: 600px){
   .tvmovieimg{
@@ -94,191 +65,14 @@ height: auto;
   }
   
 }
-  .tvmovieimg:hover{
-    transform: scale(1.2);
-  }
-  .mainpageTitle{
-    text-align: left;
-    text-shadow: 2px 1px 1px var(--shadow);
-    margin-top: 3vh;
-  }
-  
- /* -----------------Footer ----------------*/
-.downloadimg{
-    width: 10vw;
-    left: 0; 
-    margin-bottom: 2vh;
-}
-/* small screen other wise download img too small */
-@media(max-width: 850px){
-  .downloadimg{
-    width: 20vw;
-    margin-left: 20vw;
-  }
-  .infolist{
-    font-size: 0.8rem !important;
-    
-  }
-  .fheading{
-    font-size: 1.3rem !important;
 
-  }
-}
-@media(max-width: 300px){
-  .downloadimg{
-    width: 40vw;
-    margin-left: 30vw;
-  }
-}
-.info{
-    margin-bottom:0;    
-    background-color: var(--darkBlue);
-    color: var(--white);
-}
-.infolist{
-    list-style: none;
-    font-size: 1.5rem;
-}
-.infolist a{
-  text-decoration: none;
-  color: var(--white);
-}
-.fheading{
-    font-weight: bolder;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px  var(--shadow);
-    margin-bottom: 2vh;
-}
-.infolist li{
-    margin-top: 1vh;
-}
-.media{
-    margin-bottom: 1vh;
-    bottom: 10vh;
-}
+
+
+
  
- /* ----------------- Tab movie Sectrion ----------------*/
-.tabMovieSection{
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-}
 
+ 
 
- /* ----------------- Detail ----------------*/
- .detailContainer{
-  display: grid;
-  margin-right: 2vw;
-}
-.movieimg-container{
-  display: flex;
-  justify-content: center;
-}
-.movieimg{
-  width:10vw;
-  height: auto;
-  margin-right: 2vw;
-}
-.detailTitle{
-  font-size: 4vw !important; 
-  font-weight: bold;
-  text-align: center;
-}
-.category {
-  display: inline-block; 
-  margin-right: 1vw; 
-  margin-left: 1vw;
-}
-.description{
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-.buyBtn{
-  margin-right: 2vw;
-  margin-left: 2vw;
-  margin-top: 10vh;
-  background-color: var(--munsell);
-  color: var(--white);
-  box-shadow: 2px 1px 1px var(--shadow);
-}
-.rentBtn{
-  margin-right: 2vw;
-  margin-left: 2vw;
-  margin-top: 10vh;
-  background-color: var(--munsell);
-  color: var(--white);
-  box-shadow: 2px 1px 1px var(--shadow);
-}
-.buyBtn:hover .rentBtn:hover{
-  background-color: var(--orange);
-}
-.category-container{
-  text-align: center;
-}
-.btn-container{
-  text-align: center;
-}
-
- /* ----------------- Content ----------------*/
- .content-section{
-  width: auto;
-  padding-right: 2vw;
-  padding-left: 2vw;
-  background-color: var(--darkBlue);
-  box-shadow: 10px 5px 5px var(--munsell);
- }
-
-
-.content-row {
-  align-items: center; 
-}
-.content-title{
-  text-align: center;
-  justify-content: left;
-  color: var(--vanilla);
-  text-shadow: 2px 1px 1px var(--orange);
-}
-
-.content-title h1{
-  font-size: 2rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 0; 
-  overflow: visible 
-}
-
-.content-v {
-  width: 10vw;
-  height: auto;
-  margin-left: 10vw;
-}
-
-/* smaller than 768 tested*/
-@media (max-width: 768px) {
-  .v4, .v3, .v2, .v1 {
-  display: none;
-  }
-
-
-}
-
- /* ----------------- Card ----------------*/
- .cardImg{
-  height: 30vh;
-  width: auto;
-  border: black;
-  box-shadow: 3px 1px 1px var(--shadow);
-  margin-top: 5vh;
- }
- .cardImg:hover{
-  transform: scale(1.2);
- }
- .cardName{
-  text-align: center;
-  text-shadow: 2px 1px 1px var(--shadow);
-  text-decoration: none;
-  color: black;
-  margin-top: 5vh;
- }
-
+ 
   
   

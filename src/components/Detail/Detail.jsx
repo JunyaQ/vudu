@@ -1,5 +1,13 @@
 import React from "react";
+import './Detail.css';
 function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
+    const handleRent=()=>{
+        alert("Customer rent with price: "+ rentPrice);
+    }
+    const handleBuy=()=>{
+        alert("Customer buy with price: "+ buyPrice);
+    }
+
     return(
         <div className="detailContainer">
             <div className="movieimg-container">
@@ -18,8 +26,8 @@ function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
             {/* Synopsis */}
             <p className="description">{description}</p>
             <div className="btn-container">
-            <button className="rentBtn">Rent: {rentPrice}</button>
-            <button className="buyBtn">Buy: {buyPrice}</button>
+            <button className="rentBtn" onClick={handleRent}>Rent: {rentPrice}</button>
+            <button className="buyBtn" onClick={handleBuy}>Buy: {buyPrice}</button>
             </div>
             </div>
 

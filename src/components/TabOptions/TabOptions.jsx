@@ -1,6 +1,7 @@
 import {Nav, Container, Tab, Row, Col} from 'react-bootstrap';
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
+import './TabOptions.css'
 
 function TabOptions({dbdata, type}){
     const [select, setSelect] = useState('default');
@@ -33,7 +34,7 @@ function TabOptions({dbdata, type}){
     <Tab.Content>
         <Tab.Pane eventKey="default">
           {/* <p>Most watched</p> */}
-          <Row md={6} className='justify-content-center'>
+          <Row md={6} className='justify-content-left'>
            {dbdata.map(item => (
              <Col className="d-flex justify-content-center movieSection" >
                 {/* use link and id, plus dbname movie1 or tv1 */}
@@ -47,7 +48,7 @@ function TabOptions({dbdata, type}){
         {/* sort by date */}
         <Tab.Pane eventKey="release">
         {/* <p>Release Date</p> */}
-        <Row md={6} className='justify-content-center'>
+        <Row md={6} className='justify-content-left'>
            {yearData.map(item => (
              <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>
@@ -60,7 +61,7 @@ function TabOptions({dbdata, type}){
         {/* sort by alphabet */}
         <Tab.Pane eventKey="recent">
         {/* <p>Recent Added</p> */}
-        <Row md={6} className='movieSection justify-content-center'>
+        <Row md={6} className='movieSection justify-content-left'>
            {alphabetData.map(item => (
              <Col className="d-flex justify-content-center movieSection">
            <Link to={`/${type}/${item.id}`}>

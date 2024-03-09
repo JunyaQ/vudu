@@ -156,7 +156,47 @@
         "description": "Now that Gru has forsaken a life of crime to raise Margo, Agnes and Edith, he's trying to figure out how to provide for his new family. As he struggles with his responsibilities as a father, the Anti-Villain League, an organization dedicated to fighting evil, comes calling. The AVL sends Gru on a mission to capture the perpetrator of a spectacular heist, for who would be better than the world's greatest ex-villain to capture the individual who seeks to usurp his power.",
         "rentPrice": "$4.99",
         "buyPrice": "$14.99"
+      },
+      {
+        "id": 13,
+        "title": "Incantation",
+        "director": "Kevin Ko",
+        "type": ["Drama", "Horror"],
+        "year": "2022",
+        "rating": 6.2,
+        "img": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22503994_v_v10_aa.jpg",
+        "background":"https://m.media-amazon.com/images/M/MV5BYjUxZGI1ODQtMDljMS00ZTUwLWI0NTMtYjc2YmUyZTM3YTdhXkEyXkFqcGdeQXVyNTM2NTY4NzU@._V1_FMjpg_UX1000_.jpg",
+        "description": "Six years ago, Li Ronan is cursed after breaking a religious taboo; now, she must protect her daughter from the consequences of her actions.",
+        "rentPrice": "$2.99",
+        "buyPrice": "$5.99"
+      },
+      {
+        "id": 14,
+        "title": "The Black Phone",
+        "director": "Scott Derrickson",
+        "type": ["Mystery", "Horror"],
+        "year": "2021",
+        "rating": 6.9,
+        "img": "https://m.media-amazon.com/images/I/91pHAQqpFWL._AC_UF1000,1000_QL80_.jpg",
+        "background":"https://i.ebayimg.com/images/g/HTsAAOSwo6RjIh7-/s-l1600.jpg",
+        "description": "Finney Shaw is a shy but clever 13-year-old boy who's being held in a soundproof basement by a sadistic, masked killer. When a disconnected phone on the wall starts to ring, he soon discovers that he can hear the voices of the murderer's previous victims -- and they are dead set on making sure that what happened to them doesn't happen to Finney.",
+        "rentPrice": "$3.99",
+        "buyPrice": "$15.99"
+      },
+      {
+        "id": 15,
+        "title": "Eyes Wide Shut",
+        "director": "Stanley Kubrick",
+        "type": ["Mystery", "Thriller"],
+        "year": "1999",
+        "rating": 7.5,
+        "img": "https://m.media-amazon.com/images/M/MV5BYzMzZjcyNzEtZjE2OC00Yjk3LWExOGItODdhNzhkZTdmM2M0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UX1000_.jpg",
+        "background":"https://m.media-amazon.com/images/I/71sBKgKXOzL._AC_UF894,1000_QL80_.jpg",
+        "description": "After Dr. Bill Hartford's (Tom Cruise) wife, Alice (Nicole Kidman), admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter. He discovers an underground sexual group and attends one of their meetings -- and quickly discovers that he is in over his head.",
+        "rentPrice": "$3.99",
+        "buyPrice": "$12.99"
       }
+
     ],
  
  
