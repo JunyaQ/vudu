@@ -23,7 +23,7 @@ function DetailPage({type}){
 //      .catch(error => console.error('Error:', error));
 //  }, [type, id]);
 useEffect(() => {
-  fetch(`/api/${type}/${id}`)
+  fetch(`/${type}/${id}`)
     .then(response => response.json())
     .then(data => {
       console.log(id);
