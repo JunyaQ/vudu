@@ -17,6 +17,7 @@ function Movies(){
     //     .then(data => setFilms(data))
     //     .catch(error => console.error('Error:', error));
     // }, []);
+
     useEffect(() => {
         fetch('/api/movies')
         .then(response => response.json())

@@ -13,12 +13,15 @@ function FreePage() {
       }
       const [films, setFilms] = useState([]);
 
+      // for local
     //   useEffect(() => {
     //     fetch('http://localhost:3001/movies'||'api/movies')
     //     .then(response => response.json())
     //     .then(data => setFilms(data))
     //     .catch(error => console.error('Error:', error));
     // }, []);
+    
+    // for deploy
     useEffect(() => {
       fetch('/api/movies')
       .then(response => response.json())
@@ -45,7 +48,7 @@ function FreePage() {
         <h1 className='freeTitle'>Watch it for free</h1>
         <h5 className="freeTitle">{currentDate}</h5>
         <Link  className= "cardName" to={`/movies/${movienum}`}>
-        <Card pic={films?.[movienum]?.img} name={films?.[movienum]?.title}/>
+        <Card pic={films?.[movienum-1]?.img} name={films?.[movienum-1]?.title}/>
         </Link>
         </body>
 

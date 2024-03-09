@@ -16,6 +16,7 @@ function TvPage() {
     //         console.log(`Error ${err}`);
     //     })
     // },[])
+
     useEffect(()=>{
         fetch('/api/tvs')
         .then((res)=>{

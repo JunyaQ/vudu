@@ -17,6 +17,7 @@ function MoviePage() {
     //         console.log(`Error ${err}`);
     //     })
     // },[])
+    
     useEffect(()=>{
         fetch('/api/movies')
         .then((res)=>{

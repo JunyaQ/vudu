@@ -13,6 +13,7 @@ function Tvs(){
         .then(data => setTvs(data))
         .catch(error => console.error('Error:', error));
     }, []);
+
     // useEffect(() => {
     //     fetch('http://localhost:3001/tvs'||'/api/tvs')
     //     .then(response => response.json())
@@ -24,7 +25,7 @@ function Tvs(){
         <div id='Tvs' className='movies'>
             <Container fluid>
             <div className='option-container'>
-       <h2 className='mainpageTitle'>Featured Films</h2>
+       <h2 className='mainpageTitle'>New Releases</h2>
        <Link to="/tvs">
        <button className='optionBtn'> View All</button>
        </Link>

@@ -22,22 +22,23 @@ function DetailPage({type}){
 //      })
 //      .catch(error => console.error('Error:', error));
 //  }, [type, id]);
+
 useEffect(() => {
-  if (id && type) {
     console.log('id: '+id);
     console.log('type: '+type);
     fetch(`/api/${type}/${id}`)
-      .then(response => response.json())
-      .then(data => {
-        console.logA("Fetch data: ",data);
-        setItem(data); 
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }
-}, [type, id]);
-
+         .then(response => response.json())
+     .then(data => {
+       if (!id) {
+         if (data.length > 0) {
+           setItem(data[0]);
+         }
+       } else {
+         setItem(data);
+       }
+     })
+     .catch(error => console.error('Error:', error));
+ }, [type, id]);
 
  if (!item) {
    return <div>Sorry something wrong .... T^T</div>;
