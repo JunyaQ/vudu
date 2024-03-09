@@ -8,7 +8,7 @@ function MoviePage() {
     useEffect(()=>{
 
         //Async operation //POST,PUT OR DELETE
-        fetch("http://localhost:3001/movies")
+        fetch("http://localhost:3001/movies"||'api/movies')
         .then((res)=>{
   
           return res.json()

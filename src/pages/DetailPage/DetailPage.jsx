@@ -9,8 +9,7 @@ function DetailPage({type}){
  const [item, setItem] = useState(null);
  console.log(type);
  useEffect(() => {
-     let url = `http://localhost:3001/${type}/${id}`;
-   fetch(url)
+   fetch(`http://localhost:3001/${type}/${id}`||`api/${type}/${id}`)
      .then(response => response.json())
      .then(data => {
        if (!id) {

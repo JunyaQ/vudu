@@ -7,7 +7,7 @@ function TvPage() {
     useEffect(()=>{
 
         //Async operation //POST,PUT OR DELETE
-        fetch("http://localhost:3001/tvs")
+        fetch("http://localhost:3001/tvs"||'api/tvs')
         .then((res)=>{
   
           return res.json()

@@ -5,7 +5,7 @@ function Content(){
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
-      fetch('http://localhost:3001/movies')
+      fetch('http://localhost:3000/movies'||'api/movies')
       .then(response => response.json())
       .then(data => setFilms(data))
       .catch(error => console.error('Error:', error));

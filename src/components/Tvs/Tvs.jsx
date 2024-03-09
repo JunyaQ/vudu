@@ -8,7 +8,7 @@ function Tvs(){
     const [tvs, setTvs] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/tvs')
+        fetch('http://localhost:3001/tvs'||'api/tvs')
         .then(response => response.json())
         .then(data => setTvs(data))
         .catch(error => console.error('Error:', error));
