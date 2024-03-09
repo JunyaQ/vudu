@@ -10,17 +10,28 @@ const getMovies = () => {
 };
 const getMovieById = (id) => {
     const dbData = fs.readFileSync(dbPath);
+    const data = JSON.parse(dbData);
     const movie = data.movies.find(movie => movie.id === id);
     return movie;
   };
 
 module.exports = (req, res) => {
-  switch (req.method) {
-    case 'GET':
-      res.json(getMovies());
-      break;
-    default:
-      res.status(405).end(); // Method Not Allowed
-      break;
-  }
-};
+    switch (req.method) {
+        case 'GET':
+          const movieId = req.query.id; 
+          if (movieId) {
+            const movie = getMovieById(movieId);
+            if (movie) {
+              res.json(movie);
+            } else {
+              res.status(404).send('Movie not found');
+            }
+          } else {
+            res.json(getMovies());
+          }
+          break;
+        default:
+          res.status(405).end(); // Method Not Allowed
+          break;
+      }
+    };
