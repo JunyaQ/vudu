@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const dbPath = path.resolve('./db.json');
+const dbPath = path.resolve('../db.json');
+
 
 const getMovies = () => {
   const dbData = fs.readFileSync(dbPath);
