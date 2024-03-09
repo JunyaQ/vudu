@@ -15,16 +15,23 @@ const getMovieById = (id) => {
   };
 
 module.exports = (req, res) => {
-  switch (req.method) {
-    case 'GET':
-      res.json(getMovies());
-      break;
-    case 'GET':
-        const movie = getMovieById(id);
-        res.json(movie);
-        break;
-    default:
-      res.status(405).end(); // Method Not Allowed
-      break;
-  }
-};
+    const { id } = req.params; 
+    switch (req.method) {
+        case 'GET':
+          if (id) {
+            const movie = getMovieById(id);
+            if (movie) {
+              res.json(movie);
+            } else {
+              res.status(404).send('Movie not found');
+            }
+          } else {
+            res.json(getMovies());
+          }
+          break;
+        default:
+          res.status(405).end();
+          break;
+      }
+    };
+    
