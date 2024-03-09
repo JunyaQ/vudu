@@ -44,7 +44,7 @@ function FreePage() {
         <h1 className="title">TODAY ONLY! </h1>
         <h1 className='freeTitle'>Watch it for free</h1>
         <h5 className="freeTitle">{currentDate}</h5>
-        <Link  className= "cardName" to={`/movies/movie1`}>
+        <Link  className= "cardName" to={`/movies/${movienum}`}>
         <Card pic={films?.[movienum]?.img} name={films?.[movienum]?.title}/>
         </Link>
         </body>

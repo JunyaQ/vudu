@@ -26,6 +26,8 @@ useEffect(() => {
   fetch(`/api/${type}/${id}`)
     .then(response => response.json())
     .then(data => {
+      console.log(id);
+      console.log(type);
       if (!id) {
         if (data.length > 0) {
           setItem(data[0]);
