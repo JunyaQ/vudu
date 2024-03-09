@@ -4,12 +4,21 @@ import TabOptions from '../../components/TabOptions/TabOptions';
 function TvPage() {
     const [tvs, setTvs] = useState([]);
 
+    // useEffect(()=>{
+    //     fetch("http://localhost:3001/tvs"||'api/tvs')
+    //     .then((res)=>{
+    //       return res.json()
+    //     })
+    //     .then(json=>{    
+    //           setTvs(json);
+    //     })
+    //     .catch((err)=>{
+    //         console.log(`Error ${err}`);
+    //     })
+    // },[])
     useEffect(()=>{
-
-        //Async operation //POST,PUT OR DELETE
-        fetch("http://localhost:3001/tvs"||'api/tvs')
+        fetch('/api/tvs')
         .then((res)=>{
-  
           return res.json()
         })
         .then(json=>{    
@@ -18,7 +27,6 @@ function TvPage() {
         .catch((err)=>{
             console.log(`Error ${err}`);
         })
-
     },[])
 
     return(

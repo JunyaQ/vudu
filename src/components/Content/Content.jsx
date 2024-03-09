@@ -4,12 +4,18 @@ import './Content.css';
 function Content(){
   const [films, setFilms] = useState([]);
 
+  // useEffect(() => {
+  //     fetch('http://localhost:3000/movies'||'api/movies')
+  //     .then(response => response.json())
+  //     .then(data => setFilms(data))
+  //     .catch(error => console.error('Error:', error));
+  // }, []);
   useEffect(() => {
-      fetch('http://localhost:3000/movies'||'api/movies')
-      .then(response => response.json())
-      .then(data => setFilms(data))
-      .catch(error => console.error('Error:', error));
-  }, []);
+    fetch('/api/movies')
+    .then(response => response.json())
+    .then(data => setFilms(data))
+    .catch(error => console.error('Error:', error));
+}, []);
 
   const url1 = films?.[1]?.img;
   const url2 = films?.[4]?.img;

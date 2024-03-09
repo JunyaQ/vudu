@@ -5,12 +5,21 @@ import TabOptions from '../../components/TabOptions/TabOptions';
 function MoviePage() {
     const [films, setFilms] = useState([]);
 
+    // useEffect(()=>{
+    //     fetch("http://localhost:3001/movies"||'api/movies')
+    //     .then((res)=>{
+    //       return res.json()
+    //     })
+    //     .then(json=>{    
+    //           setFilms(json);
+    //     })
+    //     .catch((err)=>{
+    //         console.log(`Error ${err}`);
+    //     })
+    // },[])
     useEffect(()=>{
-
-        //Async operation //POST,PUT OR DELETE
-        fetch("http://localhost:3001/movies"||'api/movies')
+        fetch('/api/movies')
         .then((res)=>{
-  
           return res.json()
         })
         .then(json=>{    
@@ -19,7 +28,6 @@ function MoviePage() {
         .catch((err)=>{
             console.log(`Error ${err}`);
         })
-
     },[])
 
     return(

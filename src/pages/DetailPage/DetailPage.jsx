@@ -8,20 +8,34 @@ function DetailPage({type}){
  const { id } = useParams();
  const [item, setItem] = useState(null);
  console.log(type);
- useEffect(() => {
-   fetch(`http://localhost:3001/${type}/${id}`||`api/${type}/${id}`)
-     .then(response => response.json())
-     .then(data => {
-       if (!id) {
-         if (data.length > 0) {
-           setItem(data[0]);
-         }
-       } else {
-         setItem(data);
-       }
-     })
-     .catch(error => console.error('Error:', error));
- }, [type, id]);
+//  useEffect(() => {
+//    fetch(`http://localhost:3001/${type}/${id}`||`api/${type}/${id}`)
+//      .then(response => response.json())
+//      .then(data => {
+//        if (!id) {
+//          if (data.length > 0) {
+//            setItem(data[0]);
+//          }
+//        } else {
+//          setItem(data);
+//        }
+//      })
+//      .catch(error => console.error('Error:', error));
+//  }, [type, id]);
+useEffect(() => {
+  fetch(`/api/${type}/${id}`)
+    .then(response => response.json())
+    .then(data => {
+      if (!id) {
+        if (data.length > 0) {
+          setItem(data[0]);
+        }
+      } else {
+        setItem(data);
+      }
+    })
+    .catch(error => console.error('Error:', error));
+}, [type, id]);
 
 
  if (!item) {

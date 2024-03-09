@@ -13,12 +13,18 @@ function FreePage() {
       }
       const [films, setFilms] = useState([]);
 
-      useEffect(() => {
-        fetch('http://localhost:3001/movies'||'api/movies')
-        .then(response => response.json())
-        .then(data => setFilms(data))
-        .catch(error => console.error('Error:', error));
-    }, []);
+    //   useEffect(() => {
+    //     fetch('http://localhost:3001/movies'||'api/movies')
+    //     .then(response => response.json())
+    //     .then(data => setFilms(data))
+    //     .catch(error => console.error('Error:', error));
+    // }, []);
+    useEffect(() => {
+      fetch('/api/movies')
+      .then(response => response.json())
+      .then(data => setFilms(data))
+      .catch(error => console.error('Error:', error));
+  }, []);
       const currentDate = getDate();
       
     //  only have 15 movies
