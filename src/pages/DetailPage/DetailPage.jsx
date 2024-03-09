@@ -23,20 +23,18 @@ function DetailPage({type}){
 //      .catch(error => console.error('Error:', error));
 //  }, [type, id]);
 useEffect(() => {
-  fetch(`/api/${type}/${id}`)
-    .then(response => response.json())
-    .then(data => {
-      console.log(id);
-      console.log(type);
-      if (!id) {
-        if (data.length > 0) {
-          setItem(data[0]);
-        }
-      } else {
-        setItem(data);
-      }
-    })
-    .catch(error => console.error('Error:', error));
+  if (id && type) {
+    console.log('id: '+id);
+    console.log('type: '+type);
+    fetch(`/api/${type}/${id}`)
+      .then(response => response.json())
+      .then(data => {
+        setItem(data); 
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
 }, [type, id]);
 
 

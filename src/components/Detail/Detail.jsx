@@ -1,5 +1,6 @@
 import React from "react";
 import './Detail.css';
+
 function DetailIfno({img,title,type,year,description,rentPrice, buyPrice}){
     const handleRent=()=>{
         alert("Customer rent with price: "+ rentPrice);
