@@ -9,7 +9,7 @@ function DetailPage({type}){
  const [item, setItem] = useState(null);
  console.log(type);
 //  useEffect(() => {
-//    fetch(`http://localhost:3001/${type}/${id}`||`api/${type}/${id}`)
+//    fetch(`http://localhost:3001/${type}/${id}`||`/${type}/${id}`)
 //      .then(response => response.json())
 //      .then(data => {
 //        if (!id) {
@@ -23,7 +23,7 @@ function DetailPage({type}){
 //      .catch(error => console.error('Error:', error));
 //  }, [type, id]);
 useEffect(() => {
-  fetch(`/${type}/${id}`)
+  fetch(`/api/${type}/${id}`)
     .then(response => response.json())
     .then(data => {
       console.log(id);
