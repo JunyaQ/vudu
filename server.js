@@ -8,8 +8,13 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 
-app.get('/movies/:id?', movies);
-app.get('/tvs/:id?', tvs)
+app.get('/movies/:id?', (req, res) => {
+    movies(req, res);
+  });
+  
+  app.get('/tvs/:id?', (req, res) => {
+    tvs(req, res);
+  });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
